@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+select {
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #020617;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #334155;
+}
+
+th {
+  color: #93c5fd;
+}
+
+tr:hover {
+  background: #1e293b;
+}
+
+.profile {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  padding: 40px;
+}
+
+.profile > div, .profile h2 {
+  background: #020617;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 8px 12px;
+  margin-top: 10px;
+}
