@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leaderboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950 text-slate-100 min-h-screen p-6">
+
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-4xl font-extrabold mb-2">🏆 Leaderboard</h1>
+    <p class="text-slate-400 mb-6">Series-wise match performance</p>
+
+    <!-- SERIES SELECT -->
+    <select id="seriesSelect"
+      class="mb-6 bg-slate-900 text-lg px-4 py-2 rounded-xl border border-slate-700">
+    </select>
+
+    <div class="overflow-x-auto rounded-2xl shadow-2xl">
+      <table class="w-full bg-slate-900">
+        <thead class="bg-slate-800">
+          <tr>
+            <th class="px-4 py-4 text-sky-400">Rank</th>
+            <th class="px-4 py-4 text-sky-400">Player</th>
+            <th class="px-4 py-4 text-sky-400">Points</th>
+            <th class="px-4 py-4 text-sky-400">Matches</th>
+            <th class="px-4 py-4 text-sky-400">Avg</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboard" class="divide-y divide-slate-800"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PROFILE MODAL -->
+  <div id="profile" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+    <div class="bg-slate-900 max-w-md w-full rounded-2xl p-6 shadow-2xl">
+      <h2 id="profileName" class="text-2xl font-bold mb-3"></h2>
+      <div id="profileData" class="text-slate-300"></div>
+      <button onclick="closeProfile()"
+        class="mt-5 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
